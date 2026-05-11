@@ -1,0 +1,57 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { 
+	title = "Fluir Coaching – Transformación y Liderazgo", 
+	description = "Fluir Coaching. Descubre tu potencial con nuestros entrenamientos de desarrollo personal, certificación ontológica y coaching para empresas." 
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    
+    <!-- Google Fonts: Inter para un look muy limpio y premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/png" href="/assets/favicon-placeholder.png">
+    
+    <meta name="generator" content={Astro.generator} />
+</head>
+<body>
+    <Navbar />
+    
+    <main>
+        <slot />
+    </main>
+    
+    <Footer />
+    
+    <!-- Scroll Reveal and Interactive scripts -->
+    <script is:inline src="/js/main.js"></script>
+</body>
+</html>
+
+<style is:global>
+	/* Global overrides can go here if needed */
+    main {
+        padding-top: 80px; /* Offset to prevent navbar overlapping content */
+    }
+</style>

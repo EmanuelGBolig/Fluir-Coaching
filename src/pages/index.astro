@@ -1,0 +1,234 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<style>
+    /* ── Hero Video Background ───────────────────────── */
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -2;
+        /* Fallback background while video loads */
+        background-color: #2A1040;
+    }
+</style>
+<Layout 
+    title="Fluir Coaching – Transformación y Liderazgo" 
+    description="Fluir Coaching. Descubre tu potencial con nuestros entrenamientos de desarrollo personal, certificación ontológica y coaching para empresas."
+>
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- VIDEO DE FONDO (archivo local comprimido) -->
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        >
+            <source
+                src="/videos/hero.mp4"
+                type="video/mp4"
+            />
+            Tu navegador no soporta video HTML5.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal-up">
+            <span class="badge">Tu viaje comienza aquí</span>
+            <h1 class="hero-title">Lidera tu vida con <span>claridad y propósito</span></h1>
+            <p class="hero-subtitle">Descubre el coaching ontológico y expande tu percepción del mundo. Supera tus
+                límites y transforma tu realidad personal y profesional.</p>
+            <div class="hero-actions">
+                <a href="#pilares" class="btn btn-primary btn-large">Explorar Programas</a>
+                <a href="https://wa.link/r8q0ar" class="btn btn-secondary btn-large" target="_blank">Contactar Asesor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. El Problema / La Oportunidad -->
+    <section id="problema" class="problema-section">
+        <div class="container problema-container reveal-up">
+            <div class="problema-text">
+                <h2 class="section-title">¿Sientes que estás para más, pero algo te detiene?</h2>
+                <p class="section-desc">A menudo operamos bajo patrones y creencias invisibles que limitan nuestro
+                    verdadero potencial. En Fluir Coaching te brindamos las herramientas interactivas y
+                    conversaciones profundas necesarias para romper esos límites y redefinir tu experiencia de vida.
+                </p>
+            </div>
+            <div class="problema-image">
+                <!-- PLACEHOLDER IMAGE -->
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
+                    alt="Persona superando límites"
+                    onerror="this.src='https://via.placeholder.com/600x400?text=Imagen+Reflexion'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Los 4 Pilares -->
+    <section id="pilares" class="pilares-section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Nuestros Ejes de Transformación</h2>
+                <p class="section-desc">Encuentra el camino adecuado para tu crecimiento.</p>
+            </div>
+
+            <div class="pilares-grid">
+                <!-- Pilar 1 -->
+                <div class="pilar-card reveal-up" style="transition-delay: 100ms;">
+                    <div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+                    <h3 class="pilar-title">Desarrollo Personal</h3>
+                    <p class="pilar-desc">Herramientas probadas para superar tus límites actuales y expandir
+                        exponencialmente tu potencial interno.</p>
+                    <a href="/desarrollo-personal" class="pilar-link">Conocé más →</a>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="pilar-card reveal-up" style="transition-delay: 200ms;">
+                    <div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                    <h3 class="pilar-title">Certificación Ontológica</h3>
+                    <p class="pilar-desc">Tu camino guiado hacia una carrera de alto impacto, reconocimiento y
+                        transformación de otros.</p>
+                    <a href="/certificacion" class="pilar-link">Conocé más →</a>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="pilar-card reveal-up" style="transition-delay: 300ms;">
+                    <div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div>
+                    <h3 class="pilar-title">Coaching para Empresas</h3>
+                    <p class="pilar-desc">Transforma equipos de trabajo, forja liderazgos sólidos y mejora el
+                        bienestar en el ámbito corporativo.</p>
+                    <a href="/empresas" class="pilar-link">Conocé más →</a>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="pilar-card reveal-up" style="transition-delay: 400ms;">
+                    <div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                    <h3 class="pilar-title">Alto Impacto</h3>
+                    <p class="pilar-desc">Encontrá tu fuerza interior enfrentando desafíos físicos y mentales que te
+                        impulsan al siguiente nivel.</p>
+                    <a href="/alto-impacto" class="pilar-link">Conocé más →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sobre Nosotros -->
+    <section id="nosotros" class="nosotros-section">
+        <div class="container nosotros-container">
+            <div class="nosotros-image reveal-left">
+                <!-- PLACEHOLDER IMAGE FOR TEAM/OFFICE -->
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+                    alt="Equipo Fluir Coaching"
+                    onerror="this.src='https://via.placeholder.com/600x600?text=Imagen+Equipo'">
+            </div>
+            <div class="nosotros-text reveal-right">
+                <span class="badge">Nuestra Esencia</span>
+                <h2 class="section-title">Formamos líderes conscientes y congruentes</h2>
+                <p class="section-desc">Somos un equipo profundamente comprometido con el impacto positivo del
+                    liderazgo. Nuestra filosofía se basa en la congruencia: vivir lo que enseñamos para generar
+                    transformaciones auténticas en la vida de las personas y las organizaciones.</p>
+                <ul class="check-list">
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><polyline points="20 6 9 17 4 12"/></svg> Acompañamiento personalizado</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><polyline points="20 6 9 17 4 12"/></svg> Metodología vivencial y práctica</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><polyline points="20 6 9 17 4 12"/></svg> Resultados sostenibles en el tiempo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Prueba Social -->
+    <section id="testimonios" class="testimonios-section bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Lo que dicen nuestros graduados</h2>
+                <p class="section-desc">La transformación real se mide en la voz de quienes ya lo vivieron.</p>
+            </div>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-card reveal-up" style="transition-delay: 100ms;">
+                    <p class="testimonio-text">"El entrenamiento cambió mi forma de ver los obstáculos. Ahora lidero
+                        mi equipo con mucha más empatía y resultados reales."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">M</div>
+                        <div>
+                            <h4>María G.</h4>
+                            <span>Líder de Proyectos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonio-card reveal-up" style="transition-delay: 200ms;">
+                    <p class="testimonio-text">"La certificación me dio herramientas que no solo uso con mis
+                        clientes, sino que transformaron mi vida familiar y personal."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">C</div>
+                        <div>
+                            <h4>Carlos R.</h4>
+                            <span>Coach Certificado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonio-card reveal-up" style="transition-delay: 300ms;">
+                    <p class="testimonio-text">"Increíble el nivel del equipo de Fluir. Superó ampliamente mis
+                        expectativas desde el día 1."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">L</div>
+                        <div>
+                            <h4>Laura M.</h4>
+                            <span>Emprendedora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-xl reveal-up">
+                <a href="https://www.google.com/maps/place/Fluir+Coaching" target="_blank"
+                    class="btn btn-outline-light">Leer más reseñas en Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section id="faq" class="faq-section bg-light">
+        <div class="container faq-container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-desc">Resolvemos tus dudas para que des el primer paso con seguridad.</p>
+            </div>
+
+            <div class="accordion reveal-up">
+                <div class="accordion-item">
+                    <button class="accordion-btn">¿Qué es exactamente el coaching ontológico?<span
+                            class="accordion-icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Es una disciplina que te ayuda a identificar y cuestionar los patrones de pensamiento y
+                            lenguaje que limitan tu potencial, permitiéndote diseñar nuevas formas de actuar y
+                            lograr resultados extraordinarios.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">¿Necesito experiencia previa para los entrenamientos?<span
+                            class="accordion-icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>No. Nuestros entrenamientos de desarrollo personal están diseñados para cualquier persona
+                            dispuesta a aprender y desafiarse, sin importar su punto de partida.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">¿Cómo funcionan los entrenamientos para empresas?<span
+                            class="accordion-icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Diseñamos programas a medida basados en un diagnóstico previo de la organización,
+                            enfocándonos en comunicación, liderazgo y resolución de conflictos para elevar el
+                            rendimiento global.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

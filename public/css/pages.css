@@ -89,19 +89,17 @@
    -------------------------------------------------------------------------- */
 .page-hero {
     position: relative;
-    height: 60vh;
-    min-height: 420px;
+    min-height: max(60vh, 420px);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
-    padding-top: 80px;
+    padding: 120px 0 60px 0;
 }
 
 .page-hero--short {
-    height: 45vh;
-    min-height: 320px;
+    min-height: max(45vh, 320px);
 }
 
 .page-hero-bg {

@@ -683,4 +683,23 @@
     .contact-form-wrap {
         padding: 2rem 1.5rem;
     }
+
+    /* Ajustes del menú desplegable para móvil */
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: rgba(0,0,0,0.03);
+        margin-top: 1rem;
+        display: block !important;
+        border-radius: 12px;
+        padding: 0.5rem 0;
+    }
+    .dropdown-menu::before {
+        display: none;
+    }
+    .nav-dropdown > a {
+        display: none; /* Esconder "Servicios ▾" en móvil porque mostramos todo directo */
+    }
 }

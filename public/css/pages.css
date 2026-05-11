@@ -120,17 +120,20 @@
 }
 
 .page-hero-content h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 800;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.15;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6), 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .page-hero-content p {
-    font-size: 1.1rem;
-    opacity: 0.92;
+    font-size: clamp(1.15rem, 2vw, 1.3rem);
+    font-weight: 500;
+    opacity: 1;
     max-width: 600px;
     margin: 0 auto 2rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 /* --------------------------------------------------------------------------

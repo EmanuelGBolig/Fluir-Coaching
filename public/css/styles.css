@@ -525,14 +525,14 @@ section {
    Footer
    ========================================================================== */
 .footer {
-    background-color: var(--primary);
+    background-color: var(--bg-dark);
     color: var(--white);
     padding: var(--space-lg) 0 2rem;
 }
 
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1.5fr 1.2fr 1fr;
     gap: 3rem;
     margin-bottom: 3rem;
 }
@@ -543,26 +543,35 @@ section {
 }
 
 .footer-desc {
-    color: #aaaaaa;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .footer-title {
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Grid layout for links to reduce vertical length */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1.5rem;
 }
 
 .footer-links li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
 }
 
 .footer-links a, .footer-links li {
-    color: #aaaaaa;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
 }
 
 .footer-links a:hover {
-    color: var(--white);
+    color: var(--secondary);
 }
 
 .social-links {
@@ -581,17 +590,19 @@ section {
     color: var(--white);
     font-size: 0.8rem;
     font-weight: bold;
+    transition: var(--transition);
 }
 
 .social-links a:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
 }
 
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 2rem;
-    color: #777;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
 }
 

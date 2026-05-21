@@ -555,13 +555,17 @@ section {
 }
 
 /* Grid layout for links to reduce vertical length */
-.footer-links {
+.footer-links--grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem 1.5rem;
 }
 
 .footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links--grid li {
     margin-bottom: 0;
 }
 
@@ -572,6 +576,19 @@ section {
 
 .footer-links a:hover {
     color: var(--secondary);
+}
+
+/* Contact List (stacked vertically with nice spacing) */
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-contact-list li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .social-links {
